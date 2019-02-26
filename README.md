@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Hosted [here](https://bogdancc.github.io/contact-app-redux/#/). You can inspect it with the Redux DevTools browser extension.
+
 ## Available Scripts
 
 In the project directory, you can run:
