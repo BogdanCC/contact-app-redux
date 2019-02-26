@@ -33,8 +33,8 @@ export const getContact = id => async dispatch => {
 
 /**
  * Return an 'ADD_CONTACT' type which triggers the 'ADD_CONTACT' case in contact.reducer
- * @param {*} contact -> Contact object to add to contacts array in state
- * @returns {Object}  -> 'Action' object with action type and payload data
+ * @param {Object} contact -> Contact object to add to contacts array in state
+ * @returns {Object}       -> 'Action' object with action type and payload data
  */
 export const addContact = contact => async dispatch => {
     const res = await axios.post('https://jsonplaceholder.typicode.com/users', contact);
@@ -46,8 +46,8 @@ export const addContact = contact => async dispatch => {
 
 /**
  * Return an 'UPDATE_CONTACT' type which triggers the 'UPDATE_CONTACT' case in contact.reducer
- * @param {*} contact ->  Updated Contact object
- * @returns {Object}  -> 'Action' object with action type and payload data
+ * @param {Object} contact ->  Updated Contact object
+ * @returns {Object}       -> 'Action' object with action type and payload data
  */
 export const updateContact = (contact, id) => async dispatch => {
     const res = await axios.put(`https://jsonplaceholder.typicode.com/users/${id}`, contact);
@@ -60,8 +60,8 @@ export const updateContact = (contact, id) => async dispatch => {
 
 /**
  * Return a 'DELETE_CONTACT' type which triggers the 'DELETE_CONTACT' case in contact.reducer
- * @param {*} id      -> The id property of the contact object to delete from contacts array in state
- * @returns {Object}  -> 'Action' object with the action type and payload (the id of the deleted user)
+ * @param {number} id  -> The id property of the contact object to delete from contacts array in state
+ * @returns {Object}   -> 'Action' object with the action type and payload (the id of the deleted user)
  */
 export const deleteContact = id => async dispatch => {
     // Since jsonplaceholder doesn't actually mutate its data when we make requests

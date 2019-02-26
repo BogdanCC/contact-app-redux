@@ -27,8 +27,8 @@ const initialState = {
 
 /**
  * This method dictates what to do for each type of request
- * @param {*} state   -> Current state
- * @param {*} action  -> Request information. Will have payload property if action mutates state
+ * @param {Object} state   -> Current state
+ * @param {Object} action  -> Request information. Will have payload property if action mutates state
  */
 export default function(state = initialState, action) {
     const { type, payload } = action;
